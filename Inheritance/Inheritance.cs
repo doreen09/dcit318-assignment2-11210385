@@ -15,12 +15,22 @@ class Dog : Animal
     }
 }
 
+class Cat : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Meow");
+    }
+}
 class Program
 {
     static void Main()
     {
         new Animal().MakeSound();
         new Dog().MakeSound();
+        new Cat().MakeSound();
     }
 }
+
+
  
